@@ -25,7 +25,7 @@ export default function ProjectCard({
         <Image
           src={imageUrl}
           alt={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover cursor-pointer hover:scale-105 transition-all duration-300"
         />
       </CardHeader>
       <CardBody>
@@ -51,7 +51,7 @@ export default function ProjectCard({
             as={Link}
             href={liveUrl}
             target="_blank"
-            className="bg-black text-white"
+            className="bg-black text-white hover:border-white duration-300 transition all"
           >
             Live Demo
           </Button>
@@ -62,6 +62,7 @@ export default function ProjectCard({
             href={githubUrl}
             target="_blank"
             variant="bordered"
+            className="hover:border-black duration-300 transition ease-in-out"
           >
             View Code
           </Button>

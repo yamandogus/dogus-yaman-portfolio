@@ -1,61 +1,73 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { Typewriter } from "react-simple-typewriter";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-[80vh] flex items-center justify-between py-16">
+    <section className="min-h-[80vh] flex items-center justify-between">
       <div className="flex flex-col-reverse md:flex-row items-center gap-8 w-full">
         <div className="flex-1 space-y-6">
           <h1 className="text-5xl font-bold">DOĞUŞ YAMAN</h1>
           <h2 className="text-2xl text-primary font-semibold">
-            JUNIOR FRONTEND DEVELOPER
+            <Typewriter
+              words={["<JUNIOR FRONTEND DEVELOPER/>", "<REACT JS DEVELOPER/>"]}
+              loop={Infinity}
+              cursor
+              cursorStyle="|"
+              typeSpeed={150}
+              deleteSpeed={50}
+              delaySpeed={1000}
+            />
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl">
             Sağlık Yönetimi geçmişine ve yazılım ile telekomünikasyon
             alanlarında deneyime sahip biri olarak, kullanıcı davranışına dair
             derin bir anlayış ve benzersiz bir bakış açısı sunuyorum. OnlyJS
-            Academy&apos;de Front-End geliştirme eğitimi aldım ve bu alandaki bilgimi
-            Sürekli genişletiyorum. Öğrenmeye olan istekliliğim ve azmimle
-            kendimi bu alanda geliştiriyorum.
+            Academy&apos;de Front-End geliştirme eğitimi aldım ve bu alandaki
+            bilgimi Sürekli genişletiyorum. Öğrenmeye olan istekliliğim ve
+            azmimle kendimi bu alanda geliştiriyorum.
           </p>
-          <div className="flex items-center justify-center gap-4 pt-4">
-            <Link
-              href="mailto:yamandogus251@gmail.com"
-              target="_blank"
-              className="text-blue-700 hover:text-blue-500 transition duration-300 ease-in-out"
-            >
-              <svg className="w-14 h-14" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M19.435 4h-14.87C3.146 4 2 5.146 2 6.565v10.87C2 18.854 3.146 20 4.565 20h14.87c1.419 0 2.565-1.146 2.565-2.565V6.565C22 5.146 20.854 4 19.435 4zM6.648 7.886l4.24 3.64c.668.574 1.556.574 2.224 0l4.24-3.64c.316-.272.776-.24 1.048.076.272.316.24.776-.076 1.048l-4.24 3.64c-.668.574-1.556.574-2.224 0l-4.24-3.64c-.316-.272-.348-.732-.076-1.048.272-.316.732-.348 1.048-.076zm11.787 8.114H5.565c-.419 0-.565-.146-.565-.565V8.565c0-.419.146-.565.565-.565h12.87c.419 0 .565.146.565.565v6.87c0 .419-.146.565-.565.565z" />
-              </svg>
+          <div className="flex items-center justify-center gap-4">
+            <Link href="mailto:yamandogus251@gmail.com" target="_blank">
+              <img
+                width="35"
+                className="cursor-pointer hover:rotate-12 duration-300 transition all"
+                height="35"
+                src="https://img.icons8.com/color/30/gmail-new.png"
+                alt="gmail-new"
+              />
             </Link>
             <Link
               href="https://www.linkedin.com/in/dogusyaman/"
               target="_blank"
-              className="text-blue-700 hover:text-blue-500 transition duration-300 ease-in-out"
             >
-              <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-              </svg>
+              <img
+                width="35"
+                className="cursor-pointer hover:rotate-12 duration-300 transition all"
+                height="35"
+                src="https://img.icons8.com/fluency/48/linkedin.png"
+                alt="linkedin"
+              />
             </Link>
-            <Link
-              href="https://github.com/yamandogus"
-              target="_blank"
-              className="text-black hover:text-blue-500 transition duration-300 ease-in-out"
-            >
-              <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
-              </svg>
+            <Link href="https://github.com/yamandogus" target="_blank">
+              <img
+                width="35"
+                className="cursor-pointer hover:rotate-12 duration-300 transition all"
+                height="35"
+                src="https://img.icons8.com/ios-glyphs/30/github.png"
+                alt="github"
+              />
             </Link>
           </div>
         </div>
         <div className="flex-1 flex justify-center">
-          <div className="relative w-80 h-80 rounded-full overflow-hidden">
+          <div className="relative w-80 h-80 sm:w-30 sm:h-30 rounded-full overflow-hidden border-4 border-gray-200">
             <Image
               src="/profile.jpg"
               alt="Doğuş Yaman"
               fill
-              className="object-cover"
+              className="object-cover hover:scale-105 transition duration-300 ease-in-out"
               priority
             />
           </div>
