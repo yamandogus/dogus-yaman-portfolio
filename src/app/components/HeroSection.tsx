@@ -15,7 +15,7 @@ export default function HeroSection() {
             Sağlık Yönetimi geçmişine ve yazılım ile telekomünikasyon
             alanlarında deneyime sahip biri olarak, kullanıcı davranışına dair
             derin bir anlayış ve benzersiz bir bakış açısı sunuyorum. OnlyJS
-            Academy'de Front-End geliştirme eğitimi aldım ve bu alandaki bilgimi
+            Academy&apos;de Front-End geliştirme eğitimi aldım ve bu alandaki bilgimi
             Sürekli genişletiyorum. Öğrenmeye olan istekliliğim ve azmimle
             kendimi bu alanda geliştiriyorum.
           </p>
