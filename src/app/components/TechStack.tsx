@@ -1,5 +1,4 @@
 'use client'
-import { Image } from "@nextui-org/react"
 
 const skills = {
   languages: [

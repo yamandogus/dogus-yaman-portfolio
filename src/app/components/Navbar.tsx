@@ -3,7 +3,6 @@ import {
   Navbar as NextUINavbar,
   NavbarContent,
   NavbarItem,
-  Link,
   Button,
 } from "@nextui-org/react";
 
