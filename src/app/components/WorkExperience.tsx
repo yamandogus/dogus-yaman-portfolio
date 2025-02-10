@@ -31,10 +31,12 @@ const experiences = [
 export default function WorkExperience() {
   return (
     <section className="py-16">
-      <h2 className="text-3xl font-bold text-center mb-10">Work Experience</h2>
+      <h2 className="text-3xl font-bold text-center mb-10 text-gray-400">
+        Work Experience
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
         {experiences.map((exp, index) => (
-          <Card key={index} className="bg-white h-full">
+          <Card key={index} className="bg-gray-100 h-full border-2 border-gray-400 hover:border-gray-300 duration-300 transition ease-in-out">
             <CardHeader className="flex flex-col items-start gap-1 px-6 pt-6">
               <h3 className="text-xl font-bold text-primary">{exp.company}</h3>
               <div className="flex flex-col sm:flex-row sm:justify-between w-full gap-1">

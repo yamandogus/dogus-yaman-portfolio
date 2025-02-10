@@ -1,10 +1,8 @@
 'use client'
 
-import Image from "next/image";
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import ServicesSection from "./components/ServicesSection";
-import ContactSection from "./components/ContactSection";
 import ProjectsSection from "./components/ProjectsSection";
 import TechStack from "./components/TechStack";
 import WorkExperience from "./components/WorkExperience";
@@ -19,7 +17,6 @@ export default function Home() {
         <WorkExperience />
         <ServicesSection />
         <TechStack />
-        <ContactSection />
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
        <h6>Doğuş Yaman © {new Date().getFullYear()}</h6>

@@ -20,7 +20,10 @@ export default function ProjectCard({
   imageUrl 
 }: ProjectCardProps) {
   return (
-    <Card className="w-full">
+    <Card 
+      className="w-full bg-gray-100 border-2 border-gray-400 hover:border-gray-300 duration-300 transition ease-in-out"
+      shadow="none"
+    >
       <CardHeader className="p-0">
         <Image
           src={imageUrl}
@@ -37,7 +40,7 @@ export default function ProjectCard({
             {technologies.map((tech) => (
               <span 
                 key={tech}
-                className="bg-gray-100 px-2 py-1 rounded-md text-sm"
+                className="bg-gray-100 px-2 py-1 bg-gray-300 rounded-md text-sm cursor-pointer hover:rotate-6 duration-300 transition ease-in-out"
               >
                 {tech}
               </span>

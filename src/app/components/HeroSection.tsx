@@ -8,7 +8,7 @@ export default function HeroSection() {
     <section className="min-h-[80vh] flex items-center justify-between">
       <div className="flex flex-col-reverse md:flex-row items-center gap-8 w-full">
         <div className="flex-1 space-y-6">
-          <h1 className="text-5xl font-bold">DOĞUŞ YAMAN</h1>
+          <h1 className="text-5xl font-bold text-gray-400">DOĞUŞ YAMAN</h1>
           <h2 className="text-2xl text-primary font-semibold">
             <Typewriter
               words={["<JUNIOR FRONTEND DEVELOPER/>", "<REACT JS DEVELOPER/>"]}
@@ -53,7 +53,7 @@ export default function HeroSection() {
             <Link href="https://github.com/yamandogus" target="_blank">
               <img
                 width="35"
-                className="cursor-pointer hover:rotate-12 duration-300 transition all"
+                className="cursor-pointer hover:rotate-12 duration-300 transition all text-gray-600"
                 height="35"
                 src="https://img.icons8.com/ios-glyphs/30/github.png"
                 alt="github"

@@ -369,7 +369,7 @@ export default function TechStack() {
     <section className="py-2">
       <div className="mb-12">
         <div className="flex justify-center mb-6">
-          <h3 className="text-xl font-bold mb-6 text-center border-2 p-2 rounded">
+          <h3 className="text-xl font-bold mb-6 text-center border-2 p-2 rounded text-gray-400">
             Languages
           </h3>
         </div>
@@ -379,7 +379,7 @@ export default function TechStack() {
               <div className="hover:rotate-12 duration-300 cursor-pointer">
                 {tech.icon}
               </div>
-              <span className="text-gray-600">{tech.name}</span>
+              <span className="text-gray-400">{tech.name}</span>
             </div>
           ))}
         </div>
@@ -387,7 +387,7 @@ export default function TechStack() {
 
       <div>
         <div className="flex justify-center mb-6">
-        <h3 className="text-xl font-bold mb-6 text-center border-2 p-2 rounded">
+        <h3 className="text-xl font-bold mb-6 text-center border-2 p-2 rounded text-gray-400">
           Frameworks and Technologies
         </h3>
         </div>
