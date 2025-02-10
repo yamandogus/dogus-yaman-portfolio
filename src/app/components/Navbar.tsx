@@ -28,7 +28,7 @@ export default function Navbar() {
           <Button
             href="https://www.linkedin.com/in/yamandogus251"
             target="_blank"
-            className="bg-white hover:bg-gray-100 text-gray-600 hover:text-gray-900 font-medium"
+            className="bg-white hover:bg-blue-400 text-gray-600 hover:text-gray-900 font-medium"
           >
             LinkedIn
           </Button>
@@ -37,7 +37,7 @@ export default function Navbar() {
           <Button
             href="https://github.com/yamandogus251"
             target="_blank"
-            className="bg-white hover:bg-gray-100 text-gray-600 hover:text-gray-900 font-medium"
+            className="bg-white hover:bg-black text-gray-600 hover:text-white font-medium duration-300 transition ease-in-out"
           >
             Github
           </Button>
@@ -45,7 +45,7 @@ export default function Navbar() {
         <NavbarItem>
           <Button
             href="#"
-            className="bg-white hover:bg-gray-100 text-gray-600 font-medium  hover:text-green-700"
+            className="bg-white hover:bg-green-400 text-gray-600 hover:text-black font-medium duration-300 transition ease-in-out"
           >
             <a href="/CV.pdf" download>
               CV <span className="hover:rotate-12 duration-300">↓</span>

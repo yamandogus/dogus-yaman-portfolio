@@ -31,9 +31,11 @@ const experiences = [
 export default function WorkExperience() {
   return (
     <section className="py-16">
-      <h2 className="text-3xl font-bold text-center mb-10 text-gray-400">
+      <div className="flex items-center justify-center">
+      <h2 className="text-3xl font-bold text-center mb-10 text-gray-400 shadow-custom inline-block p-4">
         Work Experience
       </h2>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl mx-auto">
         {experiences.map((exp, index) => (
           <Card key={index} className="bg-gray-100 h-full border-2 border-gray-400 hover:border-gray-300 duration-300 transition ease-in-out">
