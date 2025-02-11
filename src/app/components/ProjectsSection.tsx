@@ -91,7 +91,7 @@ export default function ProjectsSection() {
   return (
     <section>
      <div className="flex items-center justify-center">
-     <h2 className="text-3xl font-bold text-center mb-12 my-8 text-gray-400 shadow-custom inline-block p-4">
+     <h2 className=" sm:text-3xl md:text-3xl font-bold text-center mb-12 my-8 text-gray-400 shadow-custom inline-block p-4">
         Projects
       </h2>
      </div>

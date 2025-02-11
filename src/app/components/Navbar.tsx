@@ -9,8 +9,8 @@ import {
 export default function Navbar() {
   return (
     <NextUINavbar maxWidth="xl" position="sticky" className="bg-transparent">
-      <NavbarContent className="basis-1/3">
-        <NavbarItem className="cursor-pointer">
+      <NavbarContent className="w-full sm:w-auto basis-1/3">
+        <NavbarItem className="w-full flex justify-center sm:justify-start cursor-pointer">
           <p className="text-gray-400 cursor-pointer font-semibold ">
             <span className="text-xl text-blue-500 font-bold">&lt;</span>
             FRONT
@@ -21,7 +21,7 @@ export default function Navbar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent
-        className="basis-1/3 opacity-0 pointer-events-none sm:opacity-100 sm:pointer-events-auto md:flex"
+        className="hidden sm:flex basis-1/3 justify-end"
         justify="end"
       >
         <NavbarItem>

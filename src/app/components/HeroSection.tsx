@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
@@ -8,13 +9,12 @@ export default function HeroSection() {
     <section className="min-h-[80vh] flex items-center justify-between">
       <div className="flex flex-col-reverse md:flex-row items-center gap-8 w-full">
         <div className="flex-1 space-y-6 text-center md:text-left">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-400 sm:text-center md:text-left">DOĞUŞ YAMAN</h1>
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-400 sm:text-center md:text-left">
+            DOĞUŞ YAMAN
+          </h1>
           <h2 className="sm:text-sm md:text-2xl text-red-500 font-semibold">
             <Typewriter
-              words={[
-                "<JUNIOR FRONTEND DEVELOPER/>",
-                "<REACT JS DEVELOPER/>",
-              ]}
+              words={["<JUNIOR FRONTEND DEVELOPER/>", "<REACT JS DEVELOPER/>"]}
               loop={Infinity}
               cursor
               cursorStyle="|"
@@ -65,8 +65,17 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="flex-1 flex justify-center">
-          <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-gray-200">
-          <Image
+          <div className="hidden md:block relative w-80 h-80 rounded-full overflow-hidden border-4 border-gray-200">
+            <Image
+              src="/profile.jpg"
+              alt="Doğuş Yaman"
+              fill
+              className="object-cover hover:scale-105 transition duration-300 ease-in-out"
+              priority
+            />
+          </div>
+          <div className="block md:hidden relative w-[150px] h-[150px] rounded-full overflow-hidden border-4 border-gray-200">
+            <Image
               src="/profile.jpg"
               alt="Doğuş Yaman"
               fill
