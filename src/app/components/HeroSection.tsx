@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
@@ -33,7 +32,7 @@ export default function HeroSection() {
           </p>
           <div className="flex items-center justify-center gap-4">
             <Link href="mailto:yamandogus251@gmail.com" target="_blank">
-              <img
+              <Image
                 width="35"
                 className="cursor-pointer hover:rotate-12 duration-300 transition all"
                 height="35"
@@ -45,7 +44,7 @@ export default function HeroSection() {
               href="https://www.linkedin.com/in/dogusyaman/"
               target="_blank"
             >
-              <img
+              <Image
                 width="35"
                 className="cursor-pointer hover:rotate-12 duration-300 transition all"
                 height="35"
@@ -54,7 +53,7 @@ export default function HeroSection() {
               />
             </Link>
             <Link href="https://github.com/yamandogus" target="_blank">
-              <img
+              <Image
                 width="35"
                 className="cursor-pointer hover:rotate-12 duration-300 transition all text-gray-600"
                 height="35"
