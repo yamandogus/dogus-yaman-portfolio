@@ -1,5 +1,8 @@
 "use client";
 
+import Marquee from "react-fast-marquee";
+import { Medium } from "./Medium";
+
 const skills = {
   languages: [
     {
@@ -68,7 +71,23 @@ const skills = {
           <path fill="#007acc" d="M0 200V0h400v400H0" />
           <path
             fill="#fff"
-            d="M87.7 200.7V217h52v148h36.9V217h52v-16c0-9 0-16.3-.4-16.5 0-.3-31.7-.4-70.2-.4l-70 .3v16.4l-.3-.1zM321.4 184c10.2 2.4 18 7 25 14.3 3.7 4 9.2 11 9.6 12.8 0 .6-17.3 12.3-27.8 18.8-.4.3-2-1.4-3.6-4-5.2-7.4-10.5-10.6-18.8-11.2-12-.8-20 5.5-20 16 0 3.2.6 5 1.8 7.6 2.7 5.5 7.7 8.8 23.2 15.6 28.6 12.3 41 20.4 48.5 32 8.5 13 10.4 33.4 4.7 48.7-6.4 16.7-22 28-44.3 31.7-7 1.2-23 1-30.5-.3-16-3-31.3-11-40.7-21.3-3.7-4-10.8-14.7-10.4-15.4l3.8-2.4 15-8.7 11.3-6.6 2.6 3.5c3.3 5.2 10.7 12.2 15 14.6 13 6.7 30.4 5.8 39-2 3.7-3.4 5.3-7 5.3-12 0-4.6-.7-6.7-3-10.2-3.2-4.4-9.6-8-27.6-16-20.7-8.8-29.5-14.4-37.7-23-4.7-5.2-9-13.3-11-20-1.5-5.8-2-20-.6-25.7 4.3-20 19.4-34 41-38 7-1.4 23.5-.8 30.4 1l-.2.2z" />
+            d="M87.7 200.7V217h52v148h36.9V217h52v-16c0-9 0-16.3-.4-16.5 0-.3-31.7-.4-70.2-.4l-70 .3v16.4l-.3-.1zM321.4 184c10.2 2.4 18 7 25 14.3 3.7 4 9.2 11 9.6 12.8 0 .6-17.3 12.3-27.8 18.8-.4.3-2-1.4-3.6-4-5.2-7.4-10.5-10.6-18.8-11.2-12-.8-20 5.5-20 16 0 3.2.6 5 1.8 7.6 2.7 5.5 7.7 8.8 23.2 15.6 28.6 12.3 41 20.4 48.5 32 8.5 13 10.4 33.4 4.7 48.7-6.4 16.7-22 28-44.3 31.7-7 1.2-23 1-30.5-.3-16-3-31.3-11-40.7-21.3-3.7-4-10.8-14.7-10.4-15.4l3.8-2.4 15-8.7 11.3-6.6 2.6 3.5c3.3 5.2 10.7 12.2 15 14.6 13 6.7 30.4 5.8 39-2 3.7-3.4 5.3-7 5.3-12 0-4.6-.7-6.7-3-10.2-3.2-4.4-9.6-8-27.6-16-20.7-8.8-29.5-14.4-37.7-23-4.7-5.2-9-13.3-11-20-1.5-5.8-2-20-.6-25.7 4.3-20 19.4-34 41-38 7-1.4 23.5-.8 30.4 1l-.2.2z"
+          />
+        </svg>
+      ),
+    },
+    {
+      name: "JSON",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          className="h-8 w-8 sm:h-10 sm:w-10"
+        >
+          <path
+            fill="#F0DB4F"
+            d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2m3.5 15.5c0 .828-.672 1.5-1.5 1.5s-1.5-.672-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5m-3.5-2.5V7h2v8h-2m-4 2.5c0 .828-.672 1.5-1.5 1.5S5 18.328 5 17.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5"
+          />
         </svg>
       ),
     },
@@ -115,10 +134,7 @@ const skills = {
           className="h-8 w-8 sm:h-10 sm:w-10"
         >
           <path d="M0 259.8V0l225 129.9v86.6L75 129.9v173.2z" fill="#00b0ff" />
-          <path
-            d="M225 129.9L450 0v259.8l-150 86.6v-86.6z"
-            fill="#0081cb"
-          />
+          <path d="M225 129.9L450 0v259.8l-150 86.6v-86.6z" fill="#0081cb" />
           <path d="M225 303.1v86.6l150 86.6v-86.6z" fill="#00b0ff" />
           <path
             d="M375 476.3l225-129.9V173.2l-75 43.3v86.6l-150 86.6zm150-346.4V43.3L600 0v86.6z"
@@ -365,6 +381,57 @@ const skills = {
         </svg>
       ),
     },
+    {
+      name: "Windsurf",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          className="h-8 w-8 sm:h-10 sm:w-10"
+        >
+          <path
+            fill="#00B4D8"
+            d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5-10-5-10 5zm10-5l10-5-10-5-10 5 10 5z"
+          />
+        </svg>
+      ),
+    },
+    {
+      name: "Cursor",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          className="h-8 w-8 sm:h-10 sm:w-10"
+        >
+          <path
+            fill="#4A90E2"
+            d="M13.64 21.97a1 1 0 0 1-1.64-.77V2.8a1 1 0 0 1 1.64-.77l8 9.2a1 1 0 0 1-.84 1.77h-4.92l-2.76 8.2a1 1 0 0 1-.48.77z"
+          />
+        </svg>
+      ),
+    },
+    {
+      name: "JWT",
+      icon: (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          className="h-8 w-8 sm:h-10 sm:w-10"
+        >
+          <path
+            fill="#D63AFF"
+            d="M12 0C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0zm0 22c-5.514 0-10-4.486-10-10S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm0-15.5l5 2.5-5 2.5-5-2.5 5-2.5zm0 11l-5-2.5V10l5 2.5V17.5zm0-8.5l-5-2.5L12 3l5 2.5-5 2.5zm5 6l-5 2.5V13l5-2.5v4.5z"
+          />
+        </svg>
+      ),
+    },
   ],
 };
 
@@ -373,39 +440,40 @@ export default function TechStack() {
     <section className="py-2">
       <div className="mb-12">
         <div className="flex justify-center mb-6">
-          <div className="sm:text-3xl md:text-2xl font-bold mb-6 text-center border p-4 rounded text-gray-400 shadow-custom inline-block">
+          <div className="sm:text-3xl md:text-xl font-bold mb-6 text-center border p-4 rounded text-gray-400 shadow-custom inline-block">
             Technologies
           </div>
         </div>
-        <div className="flex flex-wrap gap-6 justify-center">
-          {skills.languages.map((tech) => (
-            <div key={tech.name} className="flex items-center gap-2">
-              <div className="hover:rotate-12 duration-300 cursor-pointer">
-                {tech.icon}
+        <Marquee>
+          <div className="flex flex-wrap gap-6 justify-center">
+            {skills.languages.map((tech) => (
+              <div key={tech.name} className="flex items-center gap-2">
+                <div>{tech.icon}</div>
+                <span className="text-gray-400">{tech.name}</span>
               </div>
-              <span className="text-gray-400">{tech.name}</span>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Marquee>
       </div>
 
-      <div> 
+      <div>
         <div className="flex justify-center mb-6">
-          <div className="sm:text-3xl md:text-2xl font-bold mb-6 text-center border p-4 rounded text-gray-400 shadow-custom inline-block">
+          <div className="sm:text-3xl md:text-xl font-bold mb-6 text-center border p-4 rounded text-gray-400 shadow-custom inline-block">
             Frameworks and Technologies
           </div>
         </div>
-        <div className="flex flex-wrap gap-6 justify-center">
-          {skills.technologies.map((tech) => (
-            <div key={tech.name} className="flex items-center gap-2">
-              <div className="hover:rotate-12 duration-300 cursor-pointer">
-                {tech.icon}
+        <Marquee>
+          <div className="flex flex-wrap gap-6 justify-center">
+            {skills.technologies.map((tech) => (
+              <div key={tech.name} className="flex items-center gap-2">
+                <div>{tech.icon}</div>
+                <span className="text-gray-600">{tech.name}</span>
               </div>
-              <span className="text-gray-600">{tech.name}</span>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Marquee>
       </div>
+      <Medium />
     </section>
   );
 }

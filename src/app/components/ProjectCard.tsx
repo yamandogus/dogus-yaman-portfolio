@@ -21,7 +21,7 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <Card 
-      className="w-full bg-gray-100 border-2 border-gray-400 hover:border-gray-300 duration-300 transition ease-in-out"
+      className="w-full bg-gray-100 border-2 border-gray-400 hover:border-gray-300 hover:shadow-lg duration-300 transition ease-in-out"
       shadow="none"
     >
       <CardHeader className="p-0">

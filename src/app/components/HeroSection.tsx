@@ -61,6 +61,26 @@ export default function HeroSection() {
                 alt="github"
               />
             </Link>
+            <Link href="/cv.pdf" download="cv.pdf">
+              <svg
+                width="35"
+                height="35"
+                viewBox="0 0 24 24"
+                className="cursor-pointer hover:rotate-12 duration-300 transition all fill-gray-400"
+              >
+                <path d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z"/>
+                <path fill="#1f2937" d="M14 2V8H20L14 2Z"/>
+                <text
+                  x="8"
+                  y="16"
+                  className="text-xs font-bold"
+                  fill="white"
+                  style={{ fontSize: '6px', fontWeight: 'bold' }}
+                >
+                  CV
+                </text>
+              </svg>
+            </Link>
           </div>
         </div>
         <div className="flex-1 flex justify-center">
