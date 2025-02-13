@@ -31,7 +31,7 @@ const mediumPosts: MediumPost[] = [
 ];
 
 const MediumCard: React.FC<{ post: MediumPost }> = ({ post }) => (
-  <div className="bg-gray-100 p-4 w-full h-full rounded hover:bg-gray-200 transition-colors">
+  <div className="bg-gray-100 p-4 w-full h-full rounded hover:bg-gray-200 transition-colors hover:cursor-pointer hover:shadow-custom duration-300 ease-in-out">
     <Link href={post.link} target="_blank">
       <div className="grid grid-cols-2">
         <div>

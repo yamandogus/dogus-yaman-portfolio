@@ -444,7 +444,7 @@ export default function TechStack() {
             Technologies
           </div>
         </div>
-        <Marquee>
+        <Marquee className="cursor-grab bg-transparent">
           <div className="flex flex-wrap gap-6 justify-center">
             {skills.languages.map((tech) => (
               <div key={tech.name} className="flex items-center gap-2">
@@ -463,7 +463,7 @@ export default function TechStack() {
           </div>
         </div>
         <Marquee>
-          <div className="flex flex-wrap gap-6 justify-center">
+          <div className="flex flex-wrap gap-6 justify-center bg-transparent">
             {skills.technologies.map((tech) => (
               <div key={tech.name} className="flex items-center gap-2">
                 <div>{tech.icon}</div>

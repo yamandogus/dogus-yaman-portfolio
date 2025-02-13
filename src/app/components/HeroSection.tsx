@@ -1,4 +1,5 @@
 "use client";
+import { Button } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Typewriter } from "react-simple-typewriter";
@@ -61,7 +62,7 @@ export default function HeroSection() {
                 alt="github"
               />
             </Link>
-            <Link href="/cv.pdf" download="cv.pdf">
+            <a href="CV.pdf" download="CV.pdf">
               <svg
                 width="35"
                 height="35"
@@ -80,7 +81,7 @@ export default function HeroSection() {
                   CV
                 </text>
               </svg>
-            </Link>
+            </a>
           </div>
         </div>
         <div className="flex-1 flex justify-center">
