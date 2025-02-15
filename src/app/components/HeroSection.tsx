@@ -53,13 +53,15 @@ export default function HeroSection() {
               />
             </Link>
             <Link href="https://github.com/yamandogus" target="_blank">
-              <Image
+             <div className="bg-gray-400 rounded-full">
+             <Image
                 width="35"
                 className="cursor-pointer hover:rotate-12 duration-300 transition all text-gray-600"
                 height="35"
                 src="https://img.icons8.com/ios-glyphs/30/github.png"
                 alt="github"
               />
+             </div>
             </Link>
             <a href="CV.pdf" download="CV.pdf">
               <svg
