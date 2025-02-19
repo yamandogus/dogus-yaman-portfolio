@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Weather Map Dashboard",
     description:
-      "Gerçek zamanlı hava durumu bilgileri sunan, interaktif bir arayüze sahip Next.js 13 ve NextUI ile geliştirilmiş modern bir hava durumu paneli. Uygulama, masaüstü ve mobil görünümler için duyarlı bir tasarıma, animasyonlu hava durumu göstergelerine ve ayrıntılı hava tahminlerine sahiptir.",
+      "Gerçek zamanlı hava durumu bilgileri sunan, interaktif bir arayüze sahip Next.js 13 ve NextUI ile geliştirilmiş modern bir hava durumu paneli. Uygulama, masaüstü ve mobil görünümler için duyarlı bir tasarıma, animasyonlu hava durumu göstergelerine ve 5 günlük ayrıntılı hava tahminlerine sahiptir.",
     technologies: [
       "Next.js 13",
       "TypeScript",
@@ -34,7 +34,7 @@ const projects = [
     ],
     liveUrl: "https://water-map-project.vercel.app/",
     githubUrl: "https://github.com/yamandogus/water-map-project.git",
-    imageUrl: "/weather.png",
+    imageUrl: "/image.png",
   },
   {
     title: "Shopping List",
