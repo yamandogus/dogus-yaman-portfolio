@@ -37,19 +37,23 @@ const projects = [
     imageUrl: "/image.png",
   },
   {
-    title: "Shopping List",
+    title: "Chow Responsive App",
     description:
-      "JavaScript kullanarak dinamik bir Alışveriş Listesi uygulaması geliştirdim. Kullanıcıların alışveriş ihtiyaçlarını daha iyi organize etmelerini sağlamak amacıyla, çeşitli kategorilere göre filtreleme yapabilen güçlü dizi metodlarını kullandım.",
+      "Next.js ve modern web teknolojileri ile geliştirilmiş kapsamlı bir yemek sipariş platformu. Kullanıcılar hesap oluşturabilir, restoranları keşfedebilir ve siparişlerini yönetebilir. NextUI ve Tailwind CSS ile modern bir arayüz, Next Auth ile güvenli kimlik doğrulama sistemi sunulmuştur.",
     technologies: [
-      "React",
-      "JavaScript",
-      "Bootstrap",
-      "Styled Components",
-      "CSS",
+      "Next.js 15",
+      "TypeScript",
+      "NextUI",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "Next Auth",
+      "Framer Motion",
+      "Swiper.js",
+      "FontAwesome",
     ],
-    liveUrl: "https://shopping-list-iota-gules.vercel.app/",
-    githubUrl: "https://github.com/yamandogus/Shopping-List.git",
-    imageUrl: "/shopping.png",
+    liveUrl: "https://chow-responsive-app.vercel.app/",
+    githubUrl: "https://github.com/yamandogus/chow-responsive-app.git",
+    imageUrl: "/crew.png",
   },
   {
     title: "Star Wars API",
@@ -72,7 +76,7 @@ const projects = [
   {
     title: "Placeholder-React",
     description:
-      "TypeScript, Bootstrap ve React-Router kullanarak özel bir Placeholder API klonu geliştirdim. Bu uygulama, belirli bir kullanıcıya ait gönderileri ve albümleri görüntüler. Ayrıca kullanıcıların gönderileri beğenmelerine ve kaydetmelerine olanak tanıyarak bunları localStorage’a kaydetmelerini sağlar.",
+      "TypeScript, Bootstrap ve React-Router kullanarak özel bir Placeholder API klonu geliştirdim. Bu uygulama, belirli bir kullanıcıya ait gönderileri ve albümleri görüntüler. Ayrıca kullanıcıların gönderileri beğenmelerine ve kaydetmelerine olanak tanıyarak bunları localStorage'a kaydetmelerini sağlar.",
     technologies: [
       "React",
       "TypeScript",
