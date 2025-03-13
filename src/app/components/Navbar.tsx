@@ -8,7 +8,11 @@ import {
 
 export default function Navbar() {
   return (
-    <NextUINavbar maxWidth="2xl" position="sticky" className="bg-transparent w-full rounded-lg">
+    <NextUINavbar
+      maxWidth="2xl"
+      position="sticky"
+      className="w-full rounded-xl mt-2 bg-transparent"
+    >
       <NavbarContent className="w-full sm:w-auto basis-1/3">
         <NavbarItem className="w-full flex justify-center sm:justify-start cursor-pointer">
           <p className="text-gray-400 cursor-pointer font-semibold ">

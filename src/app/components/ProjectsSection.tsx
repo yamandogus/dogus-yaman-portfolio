@@ -34,7 +34,7 @@ const projects = [
     ],
     liveUrl: "https://water-map-project.vercel.app/",
     githubUrl: "https://github.com/yamandogus/water-map-project.git",
-    imageUrl: "/image.png",
+    imageUrl: "/WaterMap.png",
   },
   {
     title: "Chow Responsive App",
@@ -88,6 +88,21 @@ const projects = [
     liveUrl: "https://placeholder-react-api.vercel.app/",
     githubUrl: "https://github.com/yamandogus/placeholder-react",
     imageUrl: "/placeholder.png",
+  },
+  {
+    title: "GEMİNİ-APİ-CHATBOX",
+    description: "Next.js ve Google'ın Gemini AI teknolojisi ile geliştirilmiş modern bir yapay zeka sohbet uygulaması. Kullanıcılar yapay zeka ile etkileşime girebilir, sohbetlerini kaydedebilir ve yönetebilir. Karanlık/aydınlık tema desteği ve gradient animasyonları ile modern bir kullanıcı deneyimi sunar.",
+    technologies: [
+      "Next.js 14",
+      "TypeScript",
+      "Tailwind CSS",
+      "Google Gemini AI",
+      "HeroUI",
+      "React Simple Typewriter"
+    ],
+    liveUrl: "https://gemine-api-chatbox.vercel.app/",
+    githubUrl: "https://github.com/yamandogus/gemine-api-chatbox",
+    imageUrl: "/gemini.png",
   },
 ];
 

@@ -38,7 +38,7 @@ const MediumCard: React.FC<{ post: MediumPost }> = ({ post }) => (
           <Image src={post.image} alt="medium" width={100} height={100} />
         </div>
         <div>
-          <h6>{post.title}</h6>
+          <p>{post.title}</p>
         </div>
       </div>
     </Link>
