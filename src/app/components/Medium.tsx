@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 interface MediumPost {
   id: number;
@@ -47,7 +48,12 @@ const MediumCard: React.FC<{ post: MediumPost }> = ({ post }) => (
 
 export const Medium = () => {
   return (
-    <div className="my-6">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="my-6"
+    >
       <div className="flex items-center justify-center">
         <h6 className="sm:text-3xl md:text-xl font-bold mb-6 text-center border p-4 rounded text-gray-400 shadow-custom inline-block">
           Medium Posts
@@ -58,6 +64,6 @@ export const Medium = () => {
           <MediumCard key={post.id} post={post} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
