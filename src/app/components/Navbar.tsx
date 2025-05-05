@@ -5,6 +5,7 @@ import {
   NavbarItem,
   Button,
 } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -30,7 +31,8 @@ export default function Navbar() {
       >
         <NavbarItem>
           <Button
-            href="https://www.linkedin.com/in/yamandogus251"
+            as={Link}
+            href="https://www.linkedin.com/in/dogusyaman/"
             target="_blank"
             className="bg-white hover:bg-blue-400 text-gray-600 hover:text-gray-900 font-medium"
           >
@@ -39,7 +41,8 @@ export default function Navbar() {
         </NavbarItem>
         <NavbarItem>
           <Button
-            href="https://github.com/yamandogus251"
+            as={Link}
+            href="https://github.com/yamandogus"
             target="_blank"
             className="bg-white hover:bg-black text-gray-600 hover:text-white font-medium duration-300 transition ease-in-out"
           >
@@ -48,12 +51,12 @@ export default function Navbar() {
         </NavbarItem>
         <NavbarItem>
           <Button
-            href="#"
+            as={Link}
+            href="/CV.pdf"
             className="bg-white hover:bg-green-400 text-gray-600 hover:text-black font-medium duration-300 transition ease-in-out"
+            download
           >
-            <a href="/CV.pdf" download>
-              CV <span className="hover:rotate-12 duration-300">↓</span>
-            </a>
+            CV <span className="hover:rotate-12 duration-300">↓</span>
           </Button>
         </NavbarItem>
       </NavbarContent>
